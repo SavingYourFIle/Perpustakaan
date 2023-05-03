@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+
+import Sidebar from './Components/Sidebar'
+
+import Menu_Utama from './Pages/Menu_Utama'
+import Peminjam from './Pages/Peminjam'
+import Pengunjung from './Pages/Pengunjung'
+import Transaksi from './Pages/Transaksi'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+      <Router>
+        <div className='container'>
+          <Sidebar/>
+          <Routes>
+            <Route path='/' element={<Menu_Utama/>} />
+            <Route path='/peminjam' element={<Peminjam/>} />
+            <Route path='/pengunjung' element={<Pengunjung/>} />
+            <Route path='/transaksi' element={<Transaksi/>} />
+          </Routes>
+        </div>
+
+      </Router>
+    </>
   );
 }
 
