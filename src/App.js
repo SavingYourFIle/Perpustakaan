@@ -19,7 +19,7 @@ function App() {
             <Route path='/' element={<Menu_Utama/>} />
             <Route path='/peminjam' element={<Peminjam/>} />
             <Route path='/pengunjung' element={<Pengunjung/>} />
-            <Route path='/transaksi' element={<Transaksi/>} />
+            <Route path='/transaksi' element={<Transaksi/>} /> 
           </Routes>
         </div>
 

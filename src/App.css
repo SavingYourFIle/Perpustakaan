@@ -6,11 +6,16 @@
 
 .container{
   display: flex;
+  background-color: #40444b;
+  width: 100%;
 }
 
 .menu,.pengunjung,.peminjam,.transaksi{
-
+  
+  
+  width: 100vw;
   height: 100vh;
+  margin-left: 300px;
   display: flex;
   position: static;
   align-items: center;
