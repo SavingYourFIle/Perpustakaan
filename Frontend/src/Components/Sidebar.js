@@ -12,12 +12,15 @@ function Sidebar(props) {
         
             <nav className="sidebar">
 
-                <p className='title'> <IoIcons.IoIosBook/>  <span>Perpustakaangit </span> </p>
+                <p className='title'> <IoIcons.IoIosBook/>  <span>Perpustakaan </span> </p>
                 <hr></hr>
                 <ul className='menu-items'>
                     {SidebarData.map((item,index) =>{
                         return (
-                            <Button icon={item.icon} path={item.path} title={item.title}  />
+                            <Link to={item.path} style={{ textDecoration: 'none' }}>
+                                <Button cName={'Btn-dark'} icon={item.icon} title={item.title} style={{width: '100%'}}/>
+                            </Link>
+                            
                         );
                     })}
                     

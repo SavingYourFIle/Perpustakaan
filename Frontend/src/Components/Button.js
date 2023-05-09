@@ -1,16 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Sidebar.css'
+import './Button.css'
 
 function Button(props) {
     console.log(props);
     return (
         <>
-            <div className='nav-text' >
-                <Link to={props.path}>
+            <div className={props.cName} style={props.style} >
                 {props.icon}
                 <span>{props.title}</span>
-                </Link>
+
             </div>
         
         </>

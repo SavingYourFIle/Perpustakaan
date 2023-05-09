@@ -1,0 +1,45 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #292b2f;
+    width: 250px;
+    height: 100vh;
+    align-items: center;
+    position: fixed;
+    
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.menu-items {
+    width: 85%;
+    height: 770px;
+    
+}
+
+
+hr{
+    border: 0;
+    background-color: #40444b;
+    width: 85%;
+    height: 1px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title{
+    
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    width: 85%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    border-radius: 8px;
+}
+
+
+  
